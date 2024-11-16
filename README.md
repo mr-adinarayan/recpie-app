@@ -68,8 +68,9 @@ const apiKey = 'YOUR_API_KEY';
 - A utility-first CSS framework used to style the application for a modern, responsive look.
 
 ## Screenshots
+![Screenshot 2024-11-16 204757](https://github.com/user-attachments/assets/dd4e492f-9d8a-4c2c-bdf2-254cbc650669)
 
-![Screenshot 1](./images/screenshot1.png)
+
 *Image of the Recipe Search App in action.*
 
 ## Future Improvements

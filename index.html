@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Search App</title>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500">
+
+  <!-- App Container -->
+  <div class="container mx-auto py-12 px-6">
+    <h1 class="text-4xl font-extrabold text-white text-center mb-6">Recipe Search App</h1>
+
+    <!-- Search Form -->
+    <div class="flex justify-center mb-6">
+      <input id="ingredientInput" type="text" placeholder="Enter an ingredient..." class="px-4 py-2 w-2/3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      <button id="searchBtn" class="ml-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-indigo-400">Search</button>
+    </div>
+
+    <!-- Recipe Results -->
+    <div id="recipeResults" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+
+  <!-- Loading Spinner -->
+  <div id="loading" class="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50 text-white hidden">
+    <span class="text-2xl">Loading...</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
